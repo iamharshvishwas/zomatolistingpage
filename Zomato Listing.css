@@ -1,0 +1,504 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+section {
+  padding: 20px;
+  width: 1280px;
+  margin: 40px auto;
+}
+section ul {
+  display: flex;
+  margin-bottom: 10px;
+}
+section ul li {
+  list-style: none;
+  background: #eee;
+  padding: 8px 20px;
+  margin: 5px;
+  letter-spacing: 1px;
+}
+section ul li.active {
+  background: #03a9f4;
+  color: #fff;
+}
+.product {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body {
+  margin: auto;
+}
+a {
+  text-decoration: none;
+}
+header {
+  height: 60px;
+  width: 100%;
+  background-color: #531f1f;
+}
+#brand {
+  color: white;
+  font-size: 30px;
+  float: left;
+  margin-top: 1%;
+  margin-left: 1%;
+}
+.socialimage {
+  height: 30px;
+}
+#social {
+  float: right;
+  margin-top: 1%;
+  margin-right: 1%;
+}
+
+/* Main Block Css */
+
+#container {
+  height: 1050px;
+  width: 94%;
+  background-color: rgb(249, 224, 157);
+  margin-top: 2%;
+  margin-left: 3%;
+}
+.filter {
+  height: 700px;
+  width: 17%;
+  float: left;
+  margin-top: 1%;
+}
+.filter h2 {
+  margin-left: 4%;
+}
+label {
+  display: block;
+  padding-left: 15px;
+  text-indent: -10px;
+  font-size: 20px;
+  margin-left: 3%;
+}
+
+.dishes {
+  display: flex;
+  flex-direction: row;
+}
+.maincontainer {
+  height: 1000px;
+  width: 78%;
+  float: left;
+  margin-top: 1%;
+  margin-left: 1%;
+}
+.content {
+  height: 1000px;
+  width: 100%;
+  margin-left: 1%;
+  float: left;
+  background-color: rgb(169, 118, 100);
+}
+.content > h2 {
+  margin-left: 35%;
+  font-size: 40px;
+}
+.checked {
+  color: orange;
+}
+/*----------*/
+.tileContainer {
+  height: 205px;
+  width: 32%;
+  /* border: 2px solid black; */
+  box-shadow: 10px 10px 10px #2c2a2a;
+  float: left;
+  margin-left: 3%;
+  margin-top: 3%;
+  animation: dance 10s infinite;
+  border-radius: 10px;
+  background-color: white;
+}
+.tileComponent1 {
+  width: 46%;
+  float: left;
+}
+.tileComponent1 img {
+  width: 100%;
+  height: 205px;
+  border-radius: 10px;
+}
+
+.tileComponent2 {
+  width: 50%;
+  float: left;
+  margin-top: 3%;
+  margin-left: 2%;
+}
+
+.componentHeading {
+  color: #0e0a0c;
+  font-size: 25px;
+  margin-bottom: 5%;
+}
+
+.componentHeading > a {
+  color: #070707 !important;
+  font-size: 19px;
+  font: bold;
+}
+.componentSubHeading {
+  color: gray;
+  font-size: 14px;
+}
+
+/*
+.dishes {
+  font-size: 30px;
+}*/
+/*
+#listing {
+  height: 250px;
+  width: 70%;
+  margin: 15%;
+  margin-bottom: 2%;
+  background-color: chartreuse;
+}*/
+.card {
+  height: 200px;
+  width: 40%;
+  margin: 0%;
+  margin-top: 2%;
+  margin-left: 5%;
+
+  float: left;
+
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px #2c2a2a;
+}
+.card > img {
+  height: 200px;
+  width: 200px;
+  float: left;
+  border-radius: 5%;
+}
+.tile {
+  height: 200px;
+  width: 45%;
+  float: left;
+  margin: 3%;
+  margin-left: 3%;
+  font-size: 17px;
+}
+.tile > a {
+  color: #2c2a2a !important;
+  font-size: 22px;
+  font: bold;
+}
+.dish {
+  display: flex;
+}
+/* Footer Block Css */
+
+footer {
+  height: 120px;
+  background-color: #531f1f;
+  color: #fff;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.fotDiv {
+  width: 31%;
+  float: left;
+}
+
+.noBorder {
+  border: none;
+}
+/*-------Media Query--------------*/
+
+@media screen and (max-width: 1600px) {
+  body {
+    background-color: rgb(255, 205, 222);
+  }
+  .tileContainer {
+    width: 45%;
+  }
+  .button {
+    margin-left: 65%;
+  }
+}
+@media screen and (max-width: 1250px) {
+  body {
+    background-color: rgb(243, 170, 142);
+  }
+  .tileContainer {
+    width: 45%;
+    margin-left: 3%;
+  }
+  #container {
+    height: 1040px;
+  }
+  #container .filter {
+    height: 170px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  body {
+    background-color: rgb(199, 226, 110);
+  }
+  .tileContainer {
+    width: 45%;
+    margin-left: 3%;
+  }
+  #container {
+    height: 1230px;
+  }
+  #container .filter {
+    height: 170px;
+    width: 98%;
+    background-color: aquamarine;
+    float: left;
+    margin-top: 1%;
+    margin-left: 1%;
+    display: flex;
+    flex-direction: row;
+  }
+  .maincontainer {
+    width: 98%;
+    height: 1050px;
+    margin-left: 0%;
+  }
+  .content {
+    height: 1020px;
+    margin-left: 1%;
+  }
+  .filter1 {
+    height: 185px;
+    width: 30%;
+  }
+  .filter2 {
+    height: 185px;
+    width: 25%;
+    margin-left: 5%;
+  }
+  .filter3 {
+    height: 185px;
+    width: 25%;
+    margin-left: 5%;
+  }
+  .button {
+    margin-top: 12%;
+    margin-left: 2%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  body {
+    background-color: rgb(199, 226, 110);
+  }
+  .tileContainer {
+    width: 45%;
+    margin-left: 3%;
+  }
+  #container {
+    height: 1240px;
+  }
+  .maincontainer {
+    width: 98%;
+    height: 1010px;
+    margin-left: 0%;
+  }
+  .content {
+    height: 1010px;
+    margin-left: 1%;
+  }
+  #container .filter {
+    height: 192px;
+  }
+  .filter1 {
+    height: 190px;
+    width: 25%;
+    margin-left: 3%;
+  }
+  .filter2 {
+    height: 190px;
+    width: 15%;
+    margin-left: 10%;
+  }
+  .filter3 {
+    height: 190px;
+    width: 20%;
+    margin-left: 15%;
+  }
+  .button {
+    margin-top: 16%;
+    margin-left: 2%;
+  }
+}
+@media screen and (max-width: 920px) {
+  body {
+    background-color: rgb(199, 226, 110);
+  }
+  .tileContainer {
+    width: 47%;
+    margin-left: 2%;
+  }
+  #container {
+    height: 1230px;
+  }
+  .filter2 {
+    height: 185px;
+    width: 15%;
+    margin-left: 10%;
+  }
+  .button {
+    margin-top: 18%;
+    margin-left: 2%;
+  }
+}
+@media screen and (max-width: 800px) {
+  body {
+    background-color: rgb(107, 236, 115);
+  }
+  .tileContainer {
+    width: 47%;
+    margin-left: 2%;
+  }
+  #container {
+    height: 1230px;
+  }
+  .maincontainer {
+    width: 98%;
+    height: 1000px;
+    margin-left: 0%;
+  }
+  .content {
+    height: 1010px;
+    margin-left: 1%;
+  }
+  #container .filter {
+    height: 190px;
+  }
+  .filter1 {
+    height: 185px;
+    width: 30%;
+  }
+  .filter2 {
+    height: 185px;
+    width: 15%;
+    margin-left: 5%;
+  }
+  .filter3 {
+    height: 185px;
+    width: 20%;
+    margin-left: 12%;
+  }
+  .button {
+    margin-top: 20%;
+    margin-left: 2%;
+  }
+}
+@media screen and (max-width: 735px) {
+  body {
+    background-color: rgb(104, 241, 213);
+  }
+  .tileContainer {
+    width: 80%;
+    margin-left: 9%;
+  }
+  .maincontainer {
+    height: 1880px;
+  }
+  .content {
+    height: 1880px;
+  }
+  #container {
+    height: 2100px;
+  }
+  #container .filter {
+    height: 195px;
+  }
+  .filter2 {
+    width: 20%;
+    margin-left: 3%;
+  }
+  .filter3 {
+    width: 22%;
+    margin-left: 8%;
+  }
+  .button {
+    margin-top: 24%;
+    margin-left: 2%;
+  }
+}
+@media screen and (max-width: 635px) {
+  body {
+    background-color: rgb(111, 174, 233);
+  }
+  .tileContainer {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .maincontainer {
+    height: 1880px;
+  }
+  .content {
+    height: 1850px;
+  }
+  #container {
+    height: 2060px;
+  }
+  #container .filter {
+    height: 185px;
+  }
+  .button {
+    margin-top: 26%;
+    margin-left: 2%;
+  }
+}
+@media screen and (max-width: 550px) {
+  body {
+    background-color: rgb(111, 174, 233);
+  }
+  .tileContainer {
+    width: 85%;
+    margin-left: 8%;
+  }
+  .maincontainer {
+    height: 1820px;
+  }
+  .content {
+    height: 1820px;
+  }
+  #container {
+    height: 2090px;
+  }
+  #container .filter {
+    height: 200px;
+  }
+  .filter1 {
+    height: 185px;
+    width: 32%;
+    margin-left: 0%;
+  }
+  .filter2 {
+    height: 185px;
+    width: 25%;
+    margin-left: 1%;
+  }
+  .filter3 {
+    height: 185px;
+    width: 25%;
+    margin-left: 2%;
+  }
+  .button {
+    margin-top: 32%;
+    margin-left: 1%;
+  }
+}
